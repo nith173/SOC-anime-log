@@ -39,16 +39,15 @@ body {
 
 /* series and movies*/
 .hero {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../img/bg.jpg') center -32px / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/bg.jpg") center -32px / cover no-repeat;
   width: 100%;
   min-height: 75vh;
   display: flex;
   padding-left: 30px;
   align-items: center;
 }
-.intro-box{
+.intro-box {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   box-shadow: 5px 0 10px rgba(173, 255, 47, 0.7);
@@ -60,33 +59,33 @@ body {
   align-items: center;
   justify-content: center;
 }
-.intro-box > h1{
+.intro-box > h1 {
   color: greenyellow;
   align-self: self-start;
   margin-bottom: 10px;
 }
-a{
+a {
   color: greenyellow;
   text-decoration: underline white;
-
 }
-a:hover{
+a:hover {
   color: white;
   text-decoration: underline greenyellow;
 }
 /* series */
-.series, .movies{
+.series,
+.movies {
   margin: 20px;
   padding: 20px;
 }
-.grid{
+.grid {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   justify-items: center;
   gap: 18px;
 }
-.item{
+.item {
   width: 100%;
   max-width: 250px;
   background-color: white;
@@ -96,19 +95,47 @@ a:hover{
   border-radius: 10px;
   padding: 10px;
 }
-.item:hover {
+.grid > .item:hover {
   transform: translateY(-5px);
-  box-shadow:0 4px 12px rgba(173, 255, 47, 0.5);
+  box-shadow: 0 4px 12px rgba(173, 255, 47, 0.5);
 }
-.item img{
+.item img {
   width: 100%;
   height: auto;
 }
-h3{
+h3 {
   border-left: 3px solid greenyellow;
   padding: 5px 0 5px 15px;
   margin: 5px 0;
 }
-/* movies */
 /* reviews */
+.grid-review {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  justify-items: center;
+
+}
+
+.grid-review .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+.grid-review .item img {
+  width: 100%;
+  max-width: 100px;
+}
+.grid-review span{
+  margin: 15px 10px;
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
 /* footer */
