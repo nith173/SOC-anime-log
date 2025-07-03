@@ -39,8 +39,8 @@ body {
 
 /* series and movies*/
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/bg.jpg") center -32px / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/bg.jpg") center -70px / cover no-repeat;
   width: 100%;
   min-height: 75vh;
   display: flex;
@@ -109,7 +109,7 @@ h3 {
   margin: 5px 0;
 }
 /* reviews */
-.grid-review{
+.grid-review {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
@@ -117,22 +117,34 @@ h3 {
   max-width: 1200px;
   margin: 2rem auto;
 }
-.grid-review > .item{
+.grid-review > .item {
   background-color: transparent;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: white;
   font-size: 12px;
 }
-.grid-review > .item img{
+.grid-review > .item:hover {
+  box-shadow: 5px 0 10px rgba(173, 255, 47, 0.5);
+}
+.grid-review > .item img {
   width: 150px;
   margin-bottom: 10px;
 }
 
-.review h2{
+.review h2 {
   border-left: none;
   border-right: none;
   text-align: center;
   color: greenyellow;
 }
-
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+  background-color: greenyellow;
+}
