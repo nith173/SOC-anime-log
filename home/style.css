@@ -109,33 +109,30 @@ h3 {
   margin: 5px 0;
 }
 /* reviews */
-.grid-review {
+.grid-review{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 10px;
-  justify-items: center;
-
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
-
-.grid-review .item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.grid-review > .item{
   background-color: transparent;
+  display: flex;
+  flex-direction: column;
   color: white;
+  font-size: 12px;
+}
+.grid-review > .item img{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.review h2{
+  border-left: none;
+  border-right: none;
   text-align: center;
+  color: greenyellow;
 }
 
-.grid-review .item img {
-  width: 100%;
-  max-width: 100px;
-}
-.grid-review span{
-  margin: 15px 10px;
-  align-self: flex-start;
-  font-size: 14px;
-  font-weight: lighter;
-}
-
-/* footer */
