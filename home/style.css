@@ -40,7 +40,7 @@ body {
 /* series and movies*/
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../img/bg.jpg") center -70px / cover no-repeat;
+    url("../img/bg.jpg") center -5px / cover no-repeat;
   width: 100%;
   min-height: 75vh;
   display: flex;
