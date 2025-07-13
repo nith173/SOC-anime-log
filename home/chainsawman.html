@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suzuhime - Hero Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('/img/chainsawman.jpg') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 80vw;          
+      height: 80vh;          
+      max-width: 1400px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start; 
+      
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      font-family: 'Impact', sans-serif;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+   .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; 
+}
+
+
+    .buttons button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      background: #ff7f50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background: #ff6347;
+    }
+
+    .character-image {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .character-image img {
+      height: 100%;
+      width: auto;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        padding: 20px;
+      }
+
+      .character-image img {
+        height: auto;
+        width: 100%;
+        max-height: 300px;
+      }
+
+      .info h1 {
+        font-size: 36px;
+      }
+
+      .info p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info">
+      <h1>🔪 Chainsaw Man </h1>
+      <br />⭐⭐⭐⭐⭐<br />
+      <br>
+      <p>
+        Genre: Action, Horror, Dark Fantasy, Supernatural
+        <br>
+        Studio: MAPPA
+        <br>
+        Episodes: 12
+        <br>
+        Based on: Manga by Tatsuki Fujimoto  
+    </p>
+     <h2 style="font-family: 'Impact', sans-serif;">Summary</h2>
+     <p>The story follows Denji, a poor teenage boy burdened with his late father’s debt to the yakuza. He works as a Devil Hunter alongside his chainsaw-dog-devil companion Pochita, slaying devils to pay off what he owes.
+
+    After being betrayed and killed by the yakuza, Denji is revived when Pochita sacrifices himself to become Denji’s heart, turning him into Chainsaw Man — a hybrid with chainsaw powers.
+
+    Denji is then recruited by Makima, a mysterious and powerful government devil hunter, to join Public Safety Devil Hunters, a special task force fighting devils. Denji’s new life gives him basic comforts and a chance to pursue his simple dreams: food, shelter, and affection</p>
+      <div class="buttons">
+       
+        
+        
+        <button>Watch Now</button>
+      </div>
+    </div>
+    <div class="character-image">
+      <img src="/img/chainsawman.jpg" alt="Suzuhime Character">
+    </div>
+  </div>
+</body>
+</html>

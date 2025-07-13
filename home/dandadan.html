@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suzuhime - Hero Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('/img/dandadan.jpg') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 80vw;          
+      height: 80vh;          
+      max-width: 1400px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start; 
+      
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      font-family: 'Impact', sans-serif;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+   .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; 
+}
+
+
+    .buttons button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      background: #ff7f50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background: #ff6347;
+    }
+
+    .character-image {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .character-image img {
+      height: 100%;
+      width: auto;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        padding: 20px;
+      }
+
+      .character-image img {
+        height: auto;
+        width: 100%;
+        max-height: 300px;
+      }
+
+      .info h1 {
+        font-size: 36px;
+      }
+
+      .info p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info">
+      <h1>DANDADAN</h1>
+      <br />⭐⭐⭐⭐⭐<br />
+      <br>
+      <p>
+        Genre: Supernatural, Comedy, Action, Horror, Romance
+        <br>
+        Studio: Not officially confirmed yet (manga published by Shueisha)
+        <br>
+        Status: Anime adaptation announced, episodes just started releasing or upcoming (2025)
+        <br>
+        Author: Yukinobu Tatsu
+ 
+    </p>
+     <h2 style="font-family: 'Impact', sans-serif;">Summary</h2>
+     <p>Dandadan anime follows the chaotic, hilarious, and intense adventures of Okarun and Momo, two high schoolers who each believe in different supernatural things — ghosts and aliens.
+
+Okarun is obsessed with spirits and ghosts.
+
+Momo is a believer in aliens but skeptical of ghosts.
+
+When they team up to prove each other wrong, they get tangled in a dangerous world of spirits, demons, aliens, and curses.
+
+Both gain supernatural powers after brushes with the paranormal — Momo becomes possessed by a powerful spirit giving her insane strength, and Okarun develops alien-related abilities.
+
+Together, they fight weird and powerful supernatural enemies with a wild mix of action, comedy, and horror.</p>
+      <div class="buttons">
+       
+        
+        
+        <button>Watch Now</button>
+      </div>
+    </div>
+    <div class="character-image">
+      <img src="/img/dandadan.jpg" alt="Suzuhime Character">
+    </div>
+  </div>
+</body>
+</html>

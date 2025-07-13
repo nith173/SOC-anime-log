@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suzuhime - Hero Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('/img/demonslayer.jpg') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 80vw;          
+      height: 80vh;          
+      max-width: 1400px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start; 
+      
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h1 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      font-family: 'Impact', sans-serif;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+   .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; 
+}
+
+
+    .buttons button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      background: #ff7f50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background: #ff6347;
+    }
+
+    .character-image {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .character-image img {
+      height: 100%;
+      width: auto;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        padding: 20px;
+      }
+
+      .character-image img {
+        height: auto;
+        width: 100%;
+        max-height: 300px;
+      }
+
+      .info h1 {
+        font-size: 36px;
+      }
+
+      .info p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info">
+      <h1>🔥 Demon Slayer: Kimetsu no Yaiba</h1>
+      <br />⭐⭐⭐⭐⭐<br />
+      <br>
+      <p>
+        Genre: Action, Adventure, Dark Fantasy, Supernatural
+        <br>
+        Studio: Ufotable
+        <br>
+        Episodes: 1 (26 episodes), plus movie and Season 2 ongoing
+        <br>
+        Based on: Manga by Koyoharu Gotouge
+    </p>
+     <h2 style="font-family: 'Impact', sans-serif;">Summary</h2>
+     <p>The story centers on Tanjiro Kamado, a kind-hearted boy living peacefully in the mountains with his family. One day, his family is slaughtered by demons, and his younger sister Nezuko is turned into a demon herself.
+
+    Despite this, Nezuko retains some human emotions and fights to protect her brother. Determined to save her and avenge his family, Tanjiro becomes a Demon Slayer, joining the Demon Slayer Corps—a secret organization dedicated to hunting demons and protecting humans.
+
+</p>
+      <div class="buttons">
+       
+        
+        
+        <button>Watch Now</button>
+      </div>
+    </div>
+    <div class="character-image">
+      <img src="/img/demonslayer.jpg" alt="Suzuhime Character">
+    </div>
+  </div>
+</body>
+</html>
